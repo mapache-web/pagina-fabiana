@@ -1,9 +1,17 @@
 import { createTheme } from '@mantine/core';
 
-const theme = createTheme({
+import {
+    violeta
+} from './colores'
 
-  
 
-});
-
-export default theme
+export const theme = createTheme(
+    {
+        colors: {
+            violeta
+        },
+        components : {
+            
+        }
+    }
+);

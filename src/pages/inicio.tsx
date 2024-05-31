@@ -1,11 +1,10 @@
+import { Hero } from "../components/index";
 
-function Inicio() {
-    return (
-      <div>
-          <h1>Esta es la página de inicio</h1>
-      </div>
-    );
-  }
-  
-  export default Inicio;
-  
+
+export function Inicio() {
+  return (
+    <>
+      <Hero></Hero>
+    </>
+  )
+}

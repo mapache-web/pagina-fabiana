@@ -1,16 +1,13 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom"
-import Inicio from './pages/inicio.tsx'
-import Contacto from './pages/contacto.tsx'
-import SobreMi from './pages/sobremi.tsx'
-import Error404 from './pages/error404.tsx'
+import {Inicio, Contacto, SobreMi, Error404} from './pages/index.ts'
 import '@mantine/core/styles.css'
 import { MantineProvider } from '@mantine/core'
-import theme from './theme/theme.ts'
-import Header from './components/header/header.tsx'
+import {theme} from './theme/theme.ts'
+import {Header, Footer} from './components/index.ts'
 
 
-function App() {
+export function App() {
 
   return (
     <>
@@ -22,9 +19,8 @@ function App() {
           <Route path="/contacto" element={ <Contacto /> } />
           <Route path="*" element={<Error404 />} />
         </Routes>
+        <Footer></Footer>
       </MantineProvider>
     </>
   )
 }
-
-export default App

@@ -1,52 +1,35 @@
-import { useState } from 'react';
-import { Container, Group, Burger, Anchor } from '@mantine/core';
+import { Container, Group, Burger, Drawer, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
-import { Link } from 'react-router-dom';
+import { NavLinks } from '../navlinks/nav-links';
 
-const items = [
-  { link: '', label: 'Inicio' },
-  { link: '/sobre-mi', label: 'Sobre mi' },
-  { link: '/contacto', label: 'Contacto' }
-];
 
-function Header() {
+export function Header() {
 
-  const [opened, { toggle }] = useDisclosure(false);
-  const [active, setActive] = useState(items[0].link);
-
-  const buttons = items.map((item) => (
-
-    <Anchor 
-      component={Link} 
-      to={item.link}
-      className={classes.link}
-      data-active={active === item.link || undefined}
-      onClick={() => {
-        setActive(item.link);
-      }}
-      >
-      {item.label}
-    </Anchor>
-  ));
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   return (
     <>
       <header className={classes.header}>
         <Container size="md" className={classes.inner}>
-
-          <h4>Fabiana Barroso Psicoanalista</h4>
-          
-          <Group gap={5} visibleFrom="xs">
-            {buttons}
+          <Text size="xl">Fabiana Barroso Psicoanalista</Text>
+          <Group gap={5}
+          >
+            {NavLinks("header", classes.link)}
           </Group>
-
           <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
         </Container>
       </header>
+      <Drawer
+        opened={opened}
+        onClose={close}
+        size="100%"
+        padding="md"
+        title="Navigation"
+        hiddenFrom="sm"
+        zIndex={1000000}
+      >
+      </Drawer>
     </>
   );
 }
-
-
-export default Header
