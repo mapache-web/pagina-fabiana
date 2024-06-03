@@ -1,6 +1,6 @@
 import { Group, ActionIcon } from '@mantine/core';
 import classes from './footer.module.css';
-import { NavLinks } from '../navlinks/nav-links';
+import { NavLinks } from '../../navlinks/nav-links';
 
 
 export function Footer() {

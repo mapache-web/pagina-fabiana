@@ -1,11 +1,10 @@
 import { Container, Group, Burger, Drawer, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
-import { NavLinks } from '../navlinks/nav-links';
+import { NavLinks } from '../../navlinks/nav-links';
 
 
 export function Header() {
-
   const [opened, { toggle, close }] = useDisclosure(false);
 
   return (

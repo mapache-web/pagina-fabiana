@@ -1,0 +1,1 @@
+export type {ICurso} from './ICurso'

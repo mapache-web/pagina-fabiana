@@ -1,0 +1,1 @@
+export {cursosLoader, proximosLoader, realizadosLoader} from './loaders'
