@@ -4,6 +4,7 @@ import { cursosLoader, proximosLoader, realizadosLoader } from "./utils";
 import { MainLayout } from "./layouts";
 import { publicacionesLoader } from "./utils/loaders";
 
+
 const routes = createRoutesFromElements(
   <Route element={<MainLayout />}>
     <Route index element={<Inicio />} />

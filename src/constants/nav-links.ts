@@ -1,6 +1,6 @@
-export const navLinks = [
+export const NAV_LINKS = [
     { link: "/sobre-mi", label: 'Sobre mi' },
-    { link: "/publicaciones", label: "Publicaciones"},
     { link: '/cursos', label: 'Cursos'},
+    { link: "/publicaciones", label: "Publicaciones"},
     { link: '/contacto', label: 'Contacto' }
 ];

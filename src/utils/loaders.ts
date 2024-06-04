@@ -1,19 +1,19 @@
-import { cursos, publicaciones } from "../constants"
-import { ICurso } from "../types/ICurso"
+import { CURSOS, PUBLICACIONES } from "../constants"
+import { curso } from "../types"
 
 
 export function cursosLoader() {
-    return cursos
+    return CURSOS
 }
 
 export function proximosLoader() {
-    return cursos.filter((curso: ICurso) => !curso.realizado)
+    return CURSOS.filter((curso: curso) => !curso.realizado)
 }
 
 export function realizadosLoader() {
-    return cursos.filter((curso: ICurso) => curso.realizado)
+    return CURSOS.filter((curso: curso) => curso.realizado)
 }
 
 export function publicacionesLoader() {
-    return publicaciones
+    return PUBLICACIONES
 }

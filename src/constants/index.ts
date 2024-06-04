@@ -1,3 +1,3 @@
-export {navLinks} from './nav-links'
-export {cursos} from './cursos'
-export {publicaciones} from './publicaciones'
+export {NAV_LINKS} from './nav-links'
+export {CURSOS} from './cursos'
+export {PUBLICACIONES} from './publicaciones'

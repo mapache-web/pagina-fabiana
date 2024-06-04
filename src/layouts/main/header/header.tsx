@@ -3,7 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { navLinks } from '../../../constants';
+import { NAV_LINKS } from '../../../constants';
 
 
 export function Header() {
@@ -13,7 +13,7 @@ export function Header() {
     setActive(pathname)
   })
   const [opened, { toggle, close }] = useDisclosure(false);
-  const items = navLinks.map(
+  const items = NAV_LINKS.map(
     (item) => {
       return(
         <Link

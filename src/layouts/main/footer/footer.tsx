@@ -1,39 +1,23 @@
 import { Group, ActionIcon, Anchor } from '@mantine/core';
 import classes from './footer.module.css';
-import { navLinks } from '../../../constants';
+import { NAV_LINKS } from '../../../constants';
 import { Link } from 'react-router-dom';
 
 
 export function Footer() {
-  const items = navLinks.map(
-    (item) => {
-  //     const menuItems = item.links?.map((item) => (
-  //       <Anchor 
-  //         c="dimmed"
-  //         component={Link}
-  //         to={item.link}
-  //         key={item.label}
-  //         lh={1}
-  //         size="sm"
-  //       >
-  //         {item.label}
-  //       </Anchor>
-  //     ));
-  //     if (menuItems) return menuItems
-  //     else 
-      return (
-        <Anchor
-          c="dimmed"
-          component={Link}
-          to={item.link}
-          key={item.label}
-          lh={1}
-          size="sm"
-        >
-          {item.label}
-        </Anchor>
-      )
-    }
+  const items = NAV_LINKS.map(
+    (item) => (
+      <Anchor
+        c="dimmed"
+        component={Link}
+        to={item.link}
+        key={item.label}
+        lh={1}
+        size="sm"
+      >
+        {item.label}
+      </Anchor>
+    )
   )
   
   return (

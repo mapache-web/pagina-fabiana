@@ -6,9 +6,6 @@ export const theme = createTheme(
     {
         colors: {
             violeta
-        },
-        components : {
-            
         }
     }
 );
