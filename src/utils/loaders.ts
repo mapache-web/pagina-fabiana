@@ -1,21 +1,19 @@
+import { cursos, publicaciones } from "../constants"
 import { ICurso } from "../types/ICurso"
 
 
-export async function cursosLoader() {
-    return fetch("../../data/cursos.json")
-    .then((response) => response.json())
-    .then((data) => data)
+export function cursosLoader() {
+    return cursos
 }
 
-export async function proximosLoader() {
-    return fetch("../../data/cursos.json")
-    .then((response) => response.json())
-    .then((data) => data.filter((curso: ICurso) => !curso.realizado))
+export function proximosLoader() {
+    return cursos.filter((curso: ICurso) => !curso.realizado)
 }
 
-export async function realizadosLoader() {
-    return fetch("../../data/cursos.json")
-    .then((response) => response.json())
-    .then((data) => data.filter((curso: ICurso) => curso.realizado))
+export function realizadosLoader() {
+    return cursos.filter((curso: ICurso) => curso.realizado)
 }
 
+export function publicacionesLoader() {
+    return publicaciones
+}

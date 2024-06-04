@@ -31,3 +31,10 @@
     color: var(--mantine-color-white);
   }
 }
+
+.logo{
+
+  @mixin hover {
+    cursor: pointer;
+  }
+}
