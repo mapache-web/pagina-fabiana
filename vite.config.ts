@@ -1,8 +1,7 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/pagina-fabiana/',
+export default {
   plugins: [react()],
-})
+  base: '/pagina-fabiana/'
+}
