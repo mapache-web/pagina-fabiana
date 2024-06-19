@@ -1,13 +1,22 @@
-import { useLoaderData } from "react-router-dom";
+import { rem, Title } from "@mantine/core";
+import { ScrollRestoration } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 
 
 export function Cursos(){
-    const cursos = useLoaderData()
+    // const cursos = useLoaderData()
     return(
-        <>
-           <p>
-            {JSON.stringify(cursos)}
-           </p>
-        </>
+        <div
+            style={{
+                marginTop: rem(56),
+                minHeight: rem(400),
+                padding: rem(30)
+            }}
+        >
+           <Title c={'violet'}>
+                Cursos
+           </Title>
+           <ScrollRestoration />
+        </div>
     )
 }

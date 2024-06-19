@@ -1,0 +1,62 @@
+.wrapper{
+  background-color: var(--mantine-color-violet-0);
+  width: 100%;
+  padding: rem(50px);
+  max-height: 100vh;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: rem(20px);
+  }
+}
+
+.card {
+  height: rem(350px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin-top: var(--mantine-spacing-xs);
+  color: var(--mantine-color-violet-9);
+}
+
+.publicaciontitle{
+  margin-top: var(--mantine-spacing-xs);
+}
+
+.fecha {
+  opacity: 0.7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link{
+  width: 100%;
+}
+
+.encabezado{
+  height: auto;
+  align-items: center;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.boton{
+
+  @media (max-width: $mantine-breakpoint-sm) {
+      width: 100%;
+  }
+}
+
+.botonabajo{
+  margin-top: rem(40px);
+  margin-bottom: rem(40px);
+  width: 100%;
+}

@@ -2,7 +2,8 @@ import { curso } from "../types";
 
 export const CURSOS: curso[] = [
     {   
-        fechapub: new Date("01/06/2024"),
+        id: 1,
+        fechapub: "01/06/2024",
         titulo: "Curso proximo de ejemplo",
         descripcion: "Este es un ejemplo de curso proximo para probar si la página funciona bien",
         secciones: [
@@ -28,11 +29,12 @@ export const CURSOS: curso[] = [
             }
         ],
         realizado: false,
-        fechainicio: new Date("10/07/2024"),
-        fechafin: new Date("20/08/2024")
+        fechainicio: "10/07/2024",
+        fechafin: "20/08/2024"
     },
     {   
-        fechapub: new Date("01/06/2024"),
+        id: 2,
+        fechapub: "01/06/2024",
         titulo: "Curso realizado de ejemplo",
         descripcion: "Este es un ejemplo de curso realizado para probar si la página funciona bien",
         secciones: [
@@ -56,7 +58,8 @@ export const CURSOS: curso[] = [
             }
         ],
         realizado: true,
-        fechainicio: new Date("10/07/2024"),
-        fechafin: new Date("20/08/2024")
-    }
+        fechainicio: "10/07/2024",
+        fechafin: "20/08/2024"
+    },
+    
 ]

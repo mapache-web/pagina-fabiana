@@ -5,11 +5,12 @@ type seccion = {
 }
 
 export type curso = {
-    fechapub: Date
+    id: number
+    fechapub: string
     titulo: string
     descripcion: string
     secciones: seccion[]
     realizado: boolean
-    fechainicio?: Date
-    fechafin?: Date
+    fechainicio?: string
+    fechafin?: string
 }

@@ -5,7 +5,8 @@ type seccion = {
 }
 
 export type publicacion = {
-    fechapub: Date
+    id: number
+    fecha: string
     titulo: string
     descripcion: string
     secciones: seccion[]

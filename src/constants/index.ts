@@ -1,3 +1,5 @@
-export {NAV_LINKS} from './nav-links'
 export {CURSOS} from './cursos'
 export {PUBLICACIONES} from './publicaciones'
+export {LINKS} from './links'
+export {EXPERIENCIA} from './experiencia'
+export {SOCIAL_MEDIA} from './socialmedia'

@@ -1,0 +1,15 @@
+.button{
+    font-size: large;
+    text-align: center;
+    border: 2px solid var(--mantine-color-violet-9);
+    background-color: var(--mantine-color-white);
+    color: var(--mantine-color-violet-9);
+    border-radius: 100%;
+    width: rem(40px);
+    height: rem(40px);
+
+    @mixin hover{
+        background-color: var(--mantine-color-violet-1);
+        color: var(--mantine-color-violet-9);
+    }
+}

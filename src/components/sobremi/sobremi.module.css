@@ -1,0 +1,75 @@
+.wrapper, .wrapper2{
+  display: flex;
+  align-items: center;
+  padding: calc(var(--mantine-spacing-xl) * 2);
+  background-color: var(--mantine-color-violet-0);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column-reverse;
+    padding: var(--mantine-spacing-xl);
+  }
+}
+
+.container{
+  background-color: var(--mantine-color-violet-0);
+  padding: calc(var(--mantine-spacing-xl) * 2);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: 0;
+  }
+}
+
+.wrapper2{
+  background-color: var(--mantine-color-violet-0);
+}
+
+.image {
+  max-width: 40%;
+  margin: auto;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.body {
+  padding-left: calc(var(--mantine-spacing-xl) * 4);
+  padding-right: calc(var(--mantine-spacing-xl) * 4);
+  background-color: var(--mantine-color-white);
+  padding: var(--mantine-spacing-xl);
+  max-width: 60%;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-right: var(--mantine-spacing-xl);
+    max-width: 100%;
+    padding-left: var(--mantine-spacing-xl);
+    margin-top: var(--mantine-spacing-xl);
+  }
+}
+
+.title {
+  line-height: 1;
+  margin-bottom: var(--mantine-spacing-md);
+  color: var(--mantine-color-violet-9);
+}
+
+.controls {
+  display: flex;
+  margin-top: var(--mantine-spacing-xl);
+}
+
+.inputWrapper {
+  width: 100%;
+  flex: 1;
+}
+
+.input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

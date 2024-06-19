@@ -1,11 +1,18 @@
 import { createTheme } from '@mantine/core';
-import { violeta } from './colores'
+import { colors } from './colors';
 
 
 export const theme = createTheme(
     {
         colors: {
-            violeta
-        }
+            violet: colors.violeta,
+            orange: colors.orange,
+            cyan: colors.cyan,
+            teal: colors.teal
+        },
+        headings: {
+            fontFamily: 'Georgia, serif'
+        },
+        fontFamily: "Vardana, sans-serif"
     }
 );

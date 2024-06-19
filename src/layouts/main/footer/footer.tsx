@@ -1,42 +1,54 @@
 import { Group, ActionIcon, Anchor } from '@mantine/core';
 import classes from './footer.module.css';
-import { NAV_LINKS } from '../../../constants';
+import { LINKS, SOCIAL_MEDIA } from '../../../constants';
 import { Link } from 'react-router-dom';
-
+import { IconType } from 'react-icons';
 
 export function Footer() {
-  const items = NAV_LINKS.map(
+  const socialMedia = SOCIAL_MEDIA.map(
+    (item, index) => {
+      const Icon: IconType = item.component;
+      return(
+        <ActionIcon
+          key={index}
+          size={32}
+          // onClick={() => }
+          className={classes.icons}
+        >
+          <Icon
+            className={classes.icon}
+            size="2rem" 
+          />
+        </ActionIcon>
+      )
+    }
+  )
+  const links = LINKS.map(
     (item) => (
-      <Anchor
-        c="dimmed"
-        component={Link}
-        to={item.link}
-        key={item.label}
-        lh={1}
-        size="sm"
-      >
-        {item.label}
-      </Anchor>
+      (
+        <Anchor
+          c="dimmed"
+          component={Link}
+          className={classes.link}
+          to={item.link}
+          key={item.label}
+          lh={1}
+          size="sm"
+        >
+          {item.label}
+        </Anchor>
+      )
     )
   )
-  
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
         <h4>Fabiana Barroso Psicoanalista</h4>
         <Group className={classes.links}>
-          {items}
+          {links}
         </Group>
         <Group gap="xs" justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" variant="default" radius="xl">
-            
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            
-          </ActionIcon>
+          {socialMedia}
         </Group>
       </div>
     </div>

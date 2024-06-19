@@ -1,8 +1,12 @@
 .header {
   height: rem(56px);
-  margin-bottom: rem(120px);
   background-color: var(--mantine-color-body);
   border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .inner {
@@ -30,11 +34,19 @@
     background-color: var(--mantine-color-violet-filled);
     color: var(--mantine-color-white);
   }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    display: none;
+  }
 }
 
 .logo{
 
   @mixin hover {
     cursor: pointer;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: medium;;
   }
 }
