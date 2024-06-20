@@ -6,7 +6,7 @@ import { publicacionesLoader } from "./utils/loaders";
 
 
 const routes = createRoutesFromElements(
-  <Route element={<MainLayout />}>
+  <Route path="pagina-fabiana" element={<MainLayout />}>
     <Route index element={<Inicio />} />
     <Route path='cursos'>
       <Route index element={<Cursos />} loader={cursosLoader} />
