@@ -1,4 +1,3 @@
-import { ScrollRestoration } from "react-router-dom";
 import { 
   Contacto,
   CursosBanner, FixedButton, Hero, PublicacionesCarousel, SobreMi
@@ -15,7 +14,6 @@ export function Inicio() {
       <SobreMi />
       <FixedButton />
       <Contacto />
-      <ScrollRestoration />
     </>
   )
 }

@@ -1,5 +1,4 @@
 import { rem, Title } from "@mantine/core";
-import { ScrollRestoration } from "react-router-dom";
 // import { useLoaderData } from "react-router-dom";
 
 
@@ -16,7 +15,6 @@ export function Cursos(){
            <Title c={'violet'}>
                 Cursos
            </Title>
-           <ScrollRestoration />
         </div>
     )
 }

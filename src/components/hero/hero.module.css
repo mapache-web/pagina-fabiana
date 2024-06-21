@@ -1,9 +1,16 @@
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/hero.png");
+  color: var(--mantine-color-white);
+}
+
 .wrapper {
   margin-top: rem(56px);
   position: relative;
   padding-top: rem(120px);
   padding-bottom: rem(80px);
-  background-color: var(--mantine-color-violet-0);
 }
 
 .inner {
@@ -25,6 +32,7 @@
 
 .description {
   text-align: center;
+
 
   @media (max-width: $mantine-breakpoint-xs) {
     text-align: left;
@@ -48,9 +56,10 @@
 .control {
   height: rem(42px);
   font-size: var(--mantine-font-size-md);
-  background-color: var(--mantine-color-violet-0);
-  color: var(--mantine-color-violet-9);
-  border-color: var(--mantine-color-violet-9);
+  background: none;
+  color: var(--mantine-color-white);
+  border-color: var(--mantine-color-white);
+  background: #ffffff44;
 
   &:not(:first-of-type) {
     margin-left: var(--mantine-spacing-md);

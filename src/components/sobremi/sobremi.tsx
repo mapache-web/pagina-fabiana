@@ -25,21 +25,21 @@ export function SobreMi() {
                 <Image fallbackSrc='https://placehold.co/300x300?text=Placeholder' className={classes.image} />
             </div>
             <div className={classes.wrapper2}>
-                <Image fallbackSrc="https://placehold.co/250x400?text=Placeholder" className={classes.image} />
+                <Image src="libro.png" className={classes.image} />
                 <div className={classes.body}>
                     <Title order={3}>
                         Autora del libro 
                     </Title>
                     <br />
                     <Text size="lg">
-                        "Anorexia Mental de la pubertad. Adolescencia, Lenguaje y Cuerpo"
+                        Anorexia Mental de la pubertad. Adolescencia, Lenguaje y Cuerpo
                     </Text>
                     <br />
                     <br />
                     <Text ta="center">
-                        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut repudiandae amet et, 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut repudiandae amet et, 
                         soluta harum tempora error, unde quibusdam accusamus fugit sequi deleniti? Eligendi, 
-                        nesciunt et"
+                        nesciunt et
                     </Text>
                 </div>
             </div>

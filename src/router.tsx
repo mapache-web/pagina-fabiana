@@ -18,4 +18,4 @@ const routes = createRoutesFromElements(
   </Route>
 );
 
-export const router = createBrowserRouter(routes)
+export const router = createBrowserRouter(routes, {basename:"/pagina-fabiana/"})

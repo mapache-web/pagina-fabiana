@@ -21,6 +21,7 @@
 
 .wrapper2{
   background-color: var(--mantine-color-violet-0);
+  height: fit-content;
 }
 
 .image {
@@ -38,6 +39,7 @@
   background-color: var(--mantine-color-white);
   padding: var(--mantine-spacing-xl);
   max-width: 60%;
+  height: 100%;
 
   @media (max-width: $mantine-breakpoint-sm) {
     padding-right: var(--mantine-spacing-xl);
