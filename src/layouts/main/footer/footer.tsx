@@ -27,7 +27,6 @@ export function Footer() {
     (item) => (
       (
         <Anchor
-          c="dimmed"
           component={Link}
           className={classes.link}
           to={item.link}
