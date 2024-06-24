@@ -1,21 +1,64 @@
 .hero {
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/hero.png");
+  display: flex;
+  justify-content: left;
   color: var(--mantine-color-white);
+  background-color: black;
+  height: rem(700px);
+  max-height: 100vh;
 }
 
-.wrapper {
-  margin-top: rem(56px);
-  position: relative;
-  padding-top: rem(120px);
-  padding-bottom: rem(80px);
+.image-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: rem(1000px);
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    max-width: rem(1300px);
+  }
+}
+
+.image{
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/hero2.jpg");
+}
+
+.background{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .inner {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   position: relative;
-  text-align: center;
+  text-align: left;
+  padding: rem(70px);
+  max-width: rem(900px);
+  height: 100%;
+  z-index: 1;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 100%;
+    padding: rem(20px);
+  }
 }
 
 .title {
@@ -31,9 +74,6 @@
 }
 
 .description {
-  text-align: center;
-
-
   @media (max-width: $mantine-breakpoint-xs) {
     text-align: left;
     font-size: var(--mantine-font-size-md);
@@ -43,8 +83,6 @@
 .controls {
   margin-top: calc(var(--mantine-spacing-xl) * 1.5);
   display: flex;
-  justify-content: center;
-  padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
 
   @media (max-width: $mantine-breakpoint-sm) {
