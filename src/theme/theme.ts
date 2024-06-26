@@ -1,4 +1,4 @@
-import { createTheme } from '@mantine/core';
+import { createTheme, Title } from '@mantine/core';
 import { colors } from './colors';
 
 

@@ -64,7 +64,7 @@ export function PublicacionesCarousel() {
                 slideSize={{ base: '100%', sm: '50%' }}
                 slideGap={{ base: 0, sm: 'md' }}
                 align="start"
-                controlSize={40}
+                controlSize={50}
                 slidesToScroll={mobile ? 1 : 2}
             >
                 {slides}

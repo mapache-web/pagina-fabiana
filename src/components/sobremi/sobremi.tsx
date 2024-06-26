@@ -8,9 +8,10 @@ export function SobreMi() {
     const sobremiRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div ref={sobremiRef} id="sobremi" className={classes.container}>
+        <div ref={sobremiRef} id="sobremi" className={classes.wrapper}>
             <Title className={classes.title}>Sobre mi</Title>
-            <div className={classes.wrapper}>
+            <br />
+            <div className={classes.experiencia}>
                 <div className={classes.body}>
                     <Title order={2}>Experiencia</Title>
                     <br />
@@ -22,10 +23,20 @@ export function SobreMi() {
                         }
                     </List>
                 </div> 
-                <Image fallbackSrc='https://placehold.co/300x300?text=Placeholder' className={classes.image} />
+                <Image 
+                    fallbackSrc='https://placehold.co/300x300?text=Placeholder' 
+                    className={classes.image} 
+                />
             </div>
-            <div className={classes.wrapper2}>
-                <Image src="libro.png" className={classes.image} />
+            <br />
+            <div className={classes.libro}>
+                <Image 
+                    src="libro.png" 
+                    className={classes.image} 
+                    h={500}
+                    w="auto"
+                    fit="contain"
+                />
                 <div className={classes.body}>
                     <Title order={3}>
                         Autora del libro 

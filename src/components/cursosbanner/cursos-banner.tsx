@@ -30,8 +30,8 @@ function CursosLinks(cursos: curso[]){
   )
 }
 
-const proxCursos = CURSOS.filter((curso) => !curso.realizado)
-const cursosAnteriores = CURSOS.filter((curso) => curso.realizado)
+const proxCursos: curso[] = CURSOS.filter((curso: curso) => !curso.realizado)
+const cursosAnteriores: curso[] = CURSOS.filter((curso: curso) => curso.realizado)
 
 function CursosAccordion() {
 
@@ -62,9 +62,11 @@ export function CursosBanner() {
     <div className={classes.wrapper}>
       <div className={classes.body}>
         <Title className={classes.title}>Cursos</Title>
+        <br />
         <Text fw={500} fz="lg" mb={5}>
             xxxxxxxx, xxxxxxxxxx xxxxxxx y xxxxxxxxx
         </Text>
+        <br />
         <Text fz="sm" c="dimmed">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate autem fuga odit error numquam minus quas repellat, 
           ex quae nobis expedita adipisci nisi, blanditiis vero sunt fugit incidunt similique aperiam.
@@ -83,6 +85,8 @@ export function CursosBanner() {
       <div className={classes.links}>
         <CursosAccordion />
       </div>
+      <br />
+      <br />
     </div>
   );
 }

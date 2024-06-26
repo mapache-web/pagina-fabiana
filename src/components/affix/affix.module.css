@@ -1,9 +1,9 @@
 .button{
     font-size: large;
     text-align: center;
-    border: 2px solid var(--mantine-color-violet-9);
+    border: 2px solid black;
     background-color: var(--mantine-color-white);
-    color: var(--mantine-color-violet-9);
+    color: black;
     border-radius: 100%;
     width: rem(40px);
     height: rem(40px);

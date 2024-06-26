@@ -47,7 +47,7 @@ export function Contacto() {
     return (
         <div className={classes.wrapper} id='contacto' ref={contactoRef}>
             <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
-                <div>
+                <div className={classes.body}>
                     <Title className={classes.title}>Contacto</Title>
                     <Text className={classes.description} mt="sm" mb={30}>
                         Dejá tu dirección de correo electrónico y te responderé a la brevedad.

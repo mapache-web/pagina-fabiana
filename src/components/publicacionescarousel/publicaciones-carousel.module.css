@@ -1,12 +1,17 @@
 .wrapper{
-  background-color: var(--mantine-color-violet-0);
   width: 100%;
-  padding: rem(50px);
+  padding:  calc(var(--mantine-spacing-xl) * 2);
   max-height: 100vh;
+  background-color: #f4f4f4;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding: rem(20px);
+    padding: var(--mantine-spacing-md);
   }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    padding: calc(var(--mantine-spacing-xl) * 4);
+  }
+  
 }
 
 .card {
@@ -17,15 +22,20 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-}
+  margin: rem(30px);
 
-.title {
-  margin-top: var(--mantine-spacing-xs);
-  color: var(--mantine-color-violet-9);
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin: rem(30px) 0;
+  }
 }
 
 .publicaciontitle{
   margin-top: var(--mantine-spacing-xs);
+}
+
+.title {
+  color: var(--mantine-color-violet-9);
+  padding: var(--mantine-spacing-lg) 0;
 }
 
 .fecha {

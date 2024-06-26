@@ -1,24 +1,41 @@
+:root{
+  --black-green: #00373b;
+}
+
 .wrapper {
   min-height: rem(400px);
   background-image: linear-gradient(
-    -0deg,
-    var(--mantine-color-violet-3) 0%,
-    var(--mantine-color-violet-0) 100%
+    -180deg,
+    #f4f4f4 0%,
+    #00585ea8 100%
   );
-  padding: calc(var(--mantine-spacing-xl) * 2.5);
+  padding: calc(var(--mantine-spacing-xl) * 2);
+  padding-top: var(--mantine-spacing-xl);
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding: calc(var(--mantine-spacing-xl) * 1.5);
+    padding: var(--mantine-spacing-md);
+  }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    padding: calc(var(--mantine-spacing-xl) * 4);
+    padding-top: var(--mantine-spacing-xl);
   }
 }
 
+.body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .title {
-  line-height: 1;
-  color: var(--mantine-color-violet-9)
+  color: var(--black-green);
+  padding: var(--mantine-spacing-lg) 0;
 }
 
 .description {
-  max-width: rem(300px);
+  max-width: rem(500px);
 
   @media (max-width: $mantine-breakpoint-sm) {
     max-width: 100%;
@@ -33,26 +50,27 @@
 }
 
 .social {
-  color: var(--mantine-color-violet-8);
+  color: var(--black-green);
 
   @mixin hover {
-    color: var(--mantine-color-violet-6);
+    color: #00595f;
   }
 }
 
 .icons{
   display: flex;
   justify-content: space-around;
+  max-width: rem(600px);
 }
 
 .link{
   display: block;
   text-align: center;
   cursor: pointer;
-  color: var(--mantine-color-violet-8);
+  color: var(--black-green);
 
   @mixin hover {
-    color: var(--mantine-color-violet-6);
+    color: #00595f;
   }
 }
 
